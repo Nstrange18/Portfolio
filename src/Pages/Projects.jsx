@@ -43,10 +43,10 @@ const Projects = () => {
       title: "COFFLAVOUR",
       description:
         "Responsive website for a coffee shop.",
-      tech: ["React", "Vanilla"],
+      tech: ["React", "Vanilla", "MOCK API"],
       image: "/Cofflavour.png",
-      github: "https://github.com/Nstrange18/Cofflavour",
-      live: "https://cofflavour.vercel.app/",
+      github: "http://github.com/Nstrange18/Cofflavour",
+      live: "https://cofflavour-q6sj.vercel.app/",
       category: "Front-End",
       status: "Completed",
     }
