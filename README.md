@@ -48,8 +48,7 @@ The application will be available at `http://localhost:5173`.
 - `src/Layout/`: Application layout wrappers
 
 ## 🌐 Deployment
-
-*(Add the live URL link here once deployed via Vercel, Netlify, or your preferred host)*
+https://portfolio-teal-six-l690i4ptjn.vercel.app/
 
 ## 📄 License
 
