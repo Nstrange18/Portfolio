@@ -15,6 +15,7 @@ const Projects = () => {
       github: "https://github.com/Nstrange18/Smarttask",
       live: "https://smarttask-nu.vercel.app/",
       category: "Full-Stack",
+      status: "Completed",
     },
     {
       title: "CampusSpot",
@@ -25,6 +26,7 @@ const Projects = () => {
       github: "https://github.com/Nstrange18/CampusSpot",
       live: "https://campus-spot-lac.vercel.app/",
       category: "Full-Stack",
+      status: "Pending",
     },
     {
       title: "Biru",
@@ -35,13 +37,25 @@ const Projects = () => {
       github: "https://github.com/Nstrange18/Biru-app",
       live: "https://biru-app.vercel.app/",
       category: "Front-End",
+      status: "Completed",
     },
+    {
+      title: "COFFLAVOUR",
+      description:
+        "Responsive website for a coffee shop.",
+      tech: ["React", "Vanilla"],
+      image: "/Cofflavour.png",
+      github: "https://github.com/Nstrange18/Cofflavour",
+      live: "https://cofflavour.vercel.app/",
+      category: "Front-End",
+      status: "Completed",
+    }
   ];
 
-  const filters = ["All", "Full-Stack", "Front-End"];
+  const filters = ["All", "Full-Stack", "Front-End", "Completed", "Pending"];
 
   const filteredProjects = projectData.filter((project) => 
-    activeFilter === "All" || project.category === activeFilter
+    activeFilter === "All" || project.category === activeFilter || project.status === activeFilter
   );
 
   return (

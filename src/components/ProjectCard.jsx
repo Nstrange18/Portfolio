@@ -7,15 +7,29 @@ const ProjectCard = ({
   image,
   github,
   live,
+  status,
 }) => {
   return (
     <div className="group relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 backdrop-blur transition duration-600 ease-in-out hover:border-white/20 hover:scale-105">
       
-      <img
-        src={image}
-        alt={title}
-        className="h-48 w-full object-cover transition"
-      />
+      <div className="relative">
+        <img
+          src={image}
+          alt={title}
+          className="h-48 w-full object-cover transition group-hover:opacity-80"
+        />
+        {status && (
+          <span
+            className={`absolute right-3 top-3 rounded-full border px-3 py-1 text-xs font-semibold backdrop-blur-md transition-all ${
+              status === "Completed"
+                ? "border-emerald-500/30 bg-black/60 text-emerald-400"
+                : "border-orange-500/30 bg-black/60 text-orange-400"
+            }`}
+          >
+            {status}
+          </span>
+        )}
+      </div>
 
       <div className="p-5">
         <h3 className="text-lg font-semibold text-white">{title}</h3>
