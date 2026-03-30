@@ -1,16 +1,56 @@
-# React + Vite
+# Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Personal overview of my tech life. A modern, responsive portfolio website built to showcase my projects, experience, and skills.
 
-Currently, two official plugins are available:
+## 🚀 Built With
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **[React](https://react.dev/)**: Frontend library for building the user interface.
+- **[Vite](https://vitejs.dev/)**: Next-generation frontend tooling for fast development and building.
+- **[Tailwind CSS](https://tailwindcss.com/)**: Utility-first CSS framework for rapid UI styling.
+- **[Framer Motion](https://www.framer.com/motion/)**: For smooth, professional animations.
+- **[React Router](https://reactrouter.com/)**: For seamless client-side routing.
+- **[@iconify/react](https://iconify.design/)**: For versatile SVG icons.
 
-## React Compiler
+## 📦 Getting Started
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Prerequisites
 
-## Expanding the ESLint configuration
+Ensure you have [Node.js](https://nodejs.org/) installed on your machine.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/Nstrange18/Portfolio.git
+```
+
+2. Navigate into the project directory:
+```bash
+cd portfolio
+```
+
+3. Install the dependencies:
+```bash
+npm install
+```
+
+4. Start the development server:
+```bash
+npm run dev
+```
+
+The application will be available at `http://localhost:5173`.
+
+## 📁 Project Structure
+
+- `src/components/`: Reusable UI components (Navbar, Footer, ProjectCard, etc.)
+- `src/Pages/`: Primary page views (Hero, About, Projects, Experience, Contact)
+- `src/Layout/`: Application layout wrappers
+
+## 🌐 Deployment
+
+*(Add the live URL link here once deployed via Vercel, Netlify, or your preferred host)*
+
+## 📄 License
+
+This project is open-source and available for personal use.
