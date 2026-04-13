@@ -48,7 +48,7 @@ const Projects = () => {
       github: "http://github.com/Nstrange18/Cofflavour",
       live: "https://cofflavour-q6sj.vercel.app/",
       category: "Front-End",
-      status: "Completed",
+      status: "Pending",
     }
   ];
 
