@@ -64,7 +64,7 @@ export default function Hero() {
             <div className="relative w-full max-w-155">
               <div className="pointer-events-none absolute -inset-6 rounded-[28px] bg-blue-500/10 blur-2xl" />
               <img
-                src="/laptop.png"
+                src="/laptop.webp"
                 alt="Project preview on laptop"
                 className="relative w-full select-none drop-shadow-2xl"
                 draggable="false"

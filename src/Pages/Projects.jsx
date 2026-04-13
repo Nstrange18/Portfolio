@@ -11,7 +11,7 @@ const Projects = () => {
       description:
         "Task & project management app with authentication and dashboards.",
       tech: ["React", "Node", "MongoDB"],
-      image: "/smarttask-preview.png",
+      image: "/smarttask-preview.webp",
       github: "https://github.com/Nstrange18/Smarttask",
       live: "https://smarttask-nu.vercel.app/",
       category: "Full-Stack",
@@ -22,7 +22,7 @@ const Projects = () => {
       description:
         "Student housing platform with listings and search functionality.",
       tech: ["React", "Node", "MongoDB"],
-      image: "/campusspot-preview.png",
+      image: "/campusspot-preview.webp",
       github: "https://github.com/Nstrange18/CampusSpot",
       live: "https://campus-spot-lac.vercel.app/",
       category: "Full-Stack",
@@ -33,7 +33,7 @@ const Projects = () => {
       description:
         "Responsive website with working contact flow using EmailJS.",
       tech: ["React", "Tailwind", "EmailJS"],
-      image: "/biru-preview.png",
+      image: "/biru-preview.webp",
       github: "https://github.com/Nstrange18/Biru-app",
       live: "https://biru-app.vercel.app/",
       category: "Front-End",
@@ -44,7 +44,7 @@ const Projects = () => {
       description:
         "Responsive website for a coffee shop.",
       tech: ["React", "Vanilla", "MOCK API"],
-      image: "/Cofflavour.png",
+      image: "/Cofflavour.webp",
       github: "http://github.com/Nstrange18/Cofflavour",
       live: "https://cofflavour-q6sj.vercel.app/",
       category: "Front-End",

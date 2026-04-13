@@ -51,7 +51,7 @@ const About = () => {
               <div className="pointer-events-none absolute -inset-6 rounded-full blur-2xl" />
 
               <img
-                src="/Me.jpeg"
+                src="/Me.webp"
                 alt="Nwuba Allen"
                 className="relative h-56 w-56 rounded-full object-cover ring-1 ring-white/15 sm:h-72 sm:w-72 lg:h-80 lg:w-80"
               />
