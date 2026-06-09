@@ -49,6 +49,17 @@ const Projects = () => {
       live: "https://cofflavour-q6sj.vercel.app/",
       category: "Front-End",
       status: "Completed",
+    },
+    {
+      title: "VOWLINK",
+      description:
+        "Wedding planning app with guest list and RSVP management features.",
+      tech: ["React", "Tailwind", "Node", "MongoDB"],
+      image: "/vow-link-preview.png",
+      github: "https://github.com/Nstrange18/VowLink",
+      live: "https://vow-link-dxj5.vercel.app/",
+      category: "Full-Stack",
+      status: "Pending",
     }
   ];
 
