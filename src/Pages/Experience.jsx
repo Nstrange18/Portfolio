@@ -3,6 +3,14 @@ import { motion } from "framer-motion";
 const Experience = () => {
   const experiences = [
     {
+      id: 5,
+      role: "Full-Stack Developer",
+      company: "Focus Grid",
+      duration: "July 2026 - Present",
+      employment: "Full-time · Mostly remote",
+      description: "Contributing to web application development at a startup using React and TypeScript, and supporting application deployment on Render.",
+    },
+    {
       id: 1,
       role: "Freelance Web Developer",
       company: "Self-Employed",
@@ -66,6 +74,9 @@ const Experience = () => {
               </div>
               
               <h4 className="text-white/80 font-medium mb-3">{exp.company}</h4>
+              {exp.employment && (
+                <p className="mb-3 text-sm text-blue-200">{exp.employment}</p>
+              )}
               <p className="text-white/60 text-sm leading-relaxed">
                 {exp.description}
               </p>
