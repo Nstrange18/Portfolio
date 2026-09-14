@@ -9,6 +9,7 @@ const Projects = () => {
   const projectData = [
     {
       title: "Campus Aid",
+      status: "Completed",
       image: "/campus-aid-preview.png",
       github: "https://github.com/Nstrange18/CampusAid",
       description: "A student support platform connecting students with disabilities, university administrators, and donors through verified fundraising requests.",
@@ -17,6 +18,7 @@ const Projects = () => {
     },
     {
       title: "HostelAssess",
+      status: "Completed",
       image: "/hostelassess-preview.png",
       github: "https://github.com/Nstrange18/HostelAssess",
       description: "A hostel feedback platform where students submit assessments and complaints, and administrators review feedback and manage follow-up across the institution.",
