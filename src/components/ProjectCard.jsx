@@ -10,14 +10,15 @@ const ProjectCard = ({
   status,
 }) => {
   return (
-    <div className="group relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 backdrop-blur transition duration-600 ease-in-out hover:border-white/20 hover:scale-105">
+    <article className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-white/10 bg-white/[0.035] transition-colors duration-300 hover:border-white/25">
       
       <div className="relative">
-        <img
+        {image ? <img
           src={image}
           alt={title}
-          className="h-48 w-full object-cover transition group-hover:opacity-80"
-        />
+          loading="lazy"
+          className="aspect-video w-full object-cover object-top transition-opacity group-hover:opacity-90"
+        /> : <div className="flex aspect-video flex-col justify-end bg-[#182638] p-8 sm:p-10"><span className="text-sm font-medium text-blue-200">Selected project</span><span className="mt-3 text-3xl font-semibold tracking-tight text-white sm:text-4xl">{title}</span></div>}
         {status && (
           <span
             className={`absolute right-3 top-3 rounded-full border px-3 py-1 text-xs font-semibold backdrop-blur-md transition-all ${
@@ -31,10 +32,10 @@ const ProjectCard = ({
         )}
       </div>
 
-      <div className="p-5">
-        <h3 className="text-lg font-semibold text-white">{title}</h3>
+      <div className="flex flex-1 flex-col p-6 sm:p-8">
+        <h3 className="text-2xl font-semibold tracking-tight text-white">{title}</h3>
 
-        <p className="mt-2 text-sm text-white/60">{description}</p>
+        <p className="mt-3 max-w-prose text-sm leading-7 text-white/70">{description}</p>
 
         <div className="mt-3 flex flex-wrap gap-2">
           {tech.map((t, i) => (
@@ -47,17 +48,16 @@ const ProjectCard = ({
           ))}
         </div>
 
-        <div className="mt-5 flex items-center gap-4">
-          <a href={github} target="_blank">
-            <Icon icon="tabler:brand-github" className="text-xl text-white/70 hover:text-white" />
-          </a>
-
-          <a href={live} target="_blank">
-            <Icon icon="tabler:external-link" className="text-xl text-white/70 hover:text-white" />
-          </a>
+        <div className="mt-auto flex flex-wrap items-center gap-6 pt-7">
+          {live && <a href={live} target="_blank" rel="noopener noreferrer" aria-label={`Live demo of ${title}`} className="inline-flex min-h-11 items-center gap-2 text-sm font-medium text-blue-200 hover:text-white focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-300">
+            Live demo <Icon icon="tabler:arrow-up-right" className="text-lg" />
+          </a>}
+          {github && <a href={github} target="_blank" rel="noopener noreferrer" aria-label={`Source code for ${title}`} className="inline-flex min-h-11 items-center gap-2 text-sm text-white/70 hover:text-white focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-300">
+            <Icon icon="tabler:brand-github" className="text-lg" /> Source code
+          </a>}
         </div>
       </div>
-    </div>
+    </article>
   );
 };
 
