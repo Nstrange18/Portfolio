@@ -2,4 +2,36 @@
 
 html {
   scroll-behavior: smooth;
+  color-scheme: dark;
+  background: #0b0b10;
+}
+
+body { margin: 0; font-family: "Segoe UI", system-ui, sans-serif; }
+h1, h2, h3 { text-wrap: balance; }
+p { text-wrap: pretty; }
+a, button, summary { -webkit-tap-highlight-color: transparent; }
+:where(a, button, summary, input, textarea):focus-visible {
+  outline: 2px solid #93c5fd;
+  outline-offset: 4px;
+}
+summary::-webkit-details-marker { display: none; }
+.skip-link {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 100;
+  transform: translateY(-200%);
+  border-radius: 0.5rem;
+  background: white;
+  color: #0b0b10;
+  padding: 0.75rem 1rem;
+}
+.skip-link:focus { transform: translateY(0); }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }

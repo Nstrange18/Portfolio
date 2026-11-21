@@ -5,9 +5,9 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   const links = [
-    { href: "#about", label: "About" },
     { href: "#projects", label: "Projects" },
-    { href: "#experience", label: "Work Experience" },
+    { href: "#about", label: "About" },
+    { href: "#experience", label: "Experience" },
     { href: "#contact", label: "Contact" },
   ];
 
@@ -15,7 +15,7 @@ const Navbar = () => {
     <nav className="fixed top-0 z-50 w-full border-b border-white/10 bg-[#0b0b10]/40 backdrop-blur-2xl">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 sm:px-8 lg:px-10">
         <a
-          href="#"
+          href="#home"
           className="text-white font-bold text-lg sm:text-xl tracking-tight flex items-center gap-1"
         >
           <span className="text-blue-500">&lt;</span>
@@ -39,13 +39,15 @@ const Navbar = () => {
           onClick={() => setOpen((a) => !a)}
           className="inline-flex items-center justify-center rounded-xl border border-white/10 bg-white/5 p-2 text-white/80 transition hover:bg-white/10 md:hidden"
           aria-label="Toggle menu"
+          aria-expanded={open}
+          aria-controls="mobile-menu"
         >
           <Icon icon={open ? "mdi:close" : "mdi:menu"}/>
         </button>
       </div>
 
       {open && (
-        <div className="md:hidden border-t border-white/10 bg-[#0b0b10]/70 backdrop-blur-2xl">
+        <div id="mobile-menu" className="md:hidden border-t border-white/10 bg-[#0b0b10]/70 backdrop-blur-2xl">
           <div className="mx-auto flex max-w-7xl flex-col gap-2 px-5 py-4 sm:px-8 lg:px-10">
             {links.map((l) => (
               <a
