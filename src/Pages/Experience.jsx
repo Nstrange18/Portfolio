@@ -55,7 +55,7 @@ const Experience = () => {
               className="relative mb-12 last:mb-0"
             >
               {/* Timeline dot */}
-              <div className="absolute -left-[31px] sm:-left-[39px] top-1.5 h-3 w-3 rounded-full border-2 border-[#0b0b10] bg-white ring-4 ring-white/10" />
+              <div className="absolute -left-7.75 sm:-left-9.75 top-1.5 h-3 w-3 rounded-full border-2 border-[#0b0b10] bg-white ring-4 ring-white/10" />
 
               <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-2">
                 <h3 className="text-xl font-bold text-white">{exp.role}</h3>
